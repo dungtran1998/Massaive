@@ -1,0 +1,32 @@
+.number {
+    color: $color-white-0;
+    padding: 100px 0;
+    background-color: $color-black-12;
+    text-align: center;
+    text-transform: uppercase;
+    span {
+        display: inline-block;
+    }
+    .custom {
+        padding: 0 $pd-7;
+    }
+    .number__item {
+        .icon {
+            margin-bottom: $mg-6;
+            i {
+                padding-right: $pd-2;
+                font-size: $fs-8;
+            }
+            span {
+                letter-spacing: $letter-spacing-4;
+                font-size: $fs-6;
+            }
+        }
+        .fun-info {
+            span {
+                display: inline-block;
+                font-weight: $fw-3;
+            }
+        }
+    }
+}

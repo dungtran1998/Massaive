@@ -1,0 +1,37 @@
+.parallax {
+    .parallax__content {
+        background-image: url("../img/parallax-1.jpg");
+        @extend .backgroundImg;
+        padding: 150px 0;
+    }
+    .parallax-text {
+        text-align: center;
+        color: $color-white-0;
+        width: 100%;
+        span {
+            @include styleText($color-orange-0, $fs-9, $fw-2);
+            letter-spacing: 3px;
+        }
+        h1 {
+            @include styleText(inherit, 2.5rem, $fw-3);
+            margin-bottom: $mg-6 - 2;
+            line-height: 1.2;
+        }
+    }
+    .parallax-Btn {
+        margin: $mg-2 0 0;
+        a {
+            transition: all 0.5s;
+            display: inline-block;
+            padding: $pd-6 $pd-7;
+            color: $color-white-0;
+            background-color: $color-orange-0;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+                color: $color-black-2;
+                background-color: $color-white-0;
+            }
+        }
+    }
+}

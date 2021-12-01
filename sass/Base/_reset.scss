@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h3,
+h4 {
+    letter-spacing: 2px;
+}
+::selection {
+    color: $color-white-0;
+    background-color: $color-orange-0;
+    text-shadow: none;
+}
+body {
+    color: #323232;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: $fs-0;
+    font-weight: $fw-0;
+    line-height: $lh-0;
+}

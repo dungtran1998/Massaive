@@ -1,0 +1,39 @@
+.service__content {
+    margin-top: -$mg-1;
+    .service__item {
+        padding: 0px $pd-6;
+        @media screen and (max-width:767px) {
+            padding: $pd-6;
+            margin-bottom: $mg-7;
+        }
+        .icon {
+            text-align: left;
+            margin-bottom: $mg-1;
+        }
+        i {
+            text-align: center;
+            width: 60px;
+            height: 60px;
+            color: $color-white-1;
+            font-size: $fs-6;
+            line-height: $line-height-1;
+            background: $color-black-2;
+            border-radius: 4px;
+            box-shadow: 0 0 0 $pd-0 $color-white-0;
+            transition: all 0.5s;
+            &:hover {
+                background-color: $color-orange-0;
+            }
+        }
+        .service__title {
+            text-transform: uppercase;
+            margin-bottom: $mg-0;
+            letter-spacing: $letter-spacing-2 * 2;
+            @include styleText($color-black-2, $fs-7, normal);
+            margin-bottom: $mg-0;
+        }
+        .service__desc {
+            color: $color-grey-0;
+        }
+    }
+}

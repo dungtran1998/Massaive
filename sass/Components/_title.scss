@@ -1,0 +1,36 @@
+.heading-title {
+    margin-bottom: $mg-3;
+    text-align: center;
+    .title-header {
+        padding-bottom: $pd-0;
+        margin: 0 0 $mg-0 0;
+        color: #333;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-size: $fs-4;
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background-color: $color-black-5;
+        }
+    }
+    .title-content {
+        width: 60%;
+        margin: 0 auto;
+        color: $color-grey-0;
+        line-height: $line-height-0;
+    }
+    @media screen and (max-width: 767px) {
+        .title-content {
+            width: 80%;
+        }
+    }
+}

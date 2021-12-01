@@ -1,0 +1,105 @@
+footer {
+    .container {
+        padding: 0 $pd-7 + 15;
+        @media screen and (max-width: 767.98px) {
+            padding: 0 $pd-6;
+        }
+    }
+    .footer-top {
+        background-color: $color-black-2;
+    }
+    .footer-top__item {
+        color: $color-white-0;
+        text-align: left;
+        a {
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.5s;
+        }
+        .img-title {
+            margin: 0 0 $mg-1;
+            color: $color-grey-0;
+            line-height: $line-height-0;
+        }
+        h5 {
+            letter-spacing: $letter-spacing-4;
+            text-transform: uppercase;
+            @include styleText($color-white-0, $fs-2 + 2, $fw-2);
+            line-height: 1.5;
+            margin: 0 0 $mg-1;
+        }
+        ul {
+            list-style: none;
+        }
+        .f-list {
+            li {
+                border-bottom: 1px solid $color-black-0;
+            }
+            a {
+                display: block;
+                color: $color-grey-9;
+                line-height: $line-height-0 + 20;
+                &::before {
+                    padding-right: 15px;
+                    content: "\f105";
+                    font-weight: $fw-bold;
+                    font-family: "Font Awesome 5 Free";
+                }
+                &:hover {
+                    color: $color-orange-0;
+                }
+            }
+        }
+        .r-work {
+            li {
+                display: inline-block;
+                margin: 0 $mg-6 $mg-6 0;
+                a {
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+    .footer__bottom {
+        padding: $pd-7 0;
+        color: $color-grey-10;
+        background-color: $color-black-12;
+        border-top: 1px solid $color-black-13;
+        span {
+            a {
+                color: $color-white-0;
+                transition: color 0.5s;
+                text-decoration: none;
+                &:hover {
+                    color: $color-orange-0;
+                }
+            }
+        }
+        .social-link {
+            display: block;
+            margin-left: auto;
+            text-align: right;
+            a {
+                display: inline-block;
+                margin-left: $mg-7;
+                border: 1px solid $color-grey-11;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                line-height: 38px;
+                @include styleText($color-grey-10, $fs-3, $fw-bold);
+                transition: all 0.5s;
+                &:hover {
+                    color: $color-white-0;
+                    border-color: transparent;
+                    background: $color-grey-11;
+                }
+                @media screen and (max-width: 767.98px) {
+                    margin: 0 $mg-7 0 0;
+                }
+            }
+        }
+    }
+}

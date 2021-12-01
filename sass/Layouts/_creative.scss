@@ -1,0 +1,50 @@
+.creative {
+    .creative__content {
+        .nav-tabs {
+            text-align: center;
+            justify-content: center;
+            border: none;
+            .nav-item {
+                a {
+                    display: inline-block;
+                    margin: 0 $mg-7;
+                    padding: 0px;
+                    border: none;
+                    letter-spacing: $letter-spacing-3;
+                    text-transform: uppercase;
+                    @include styleText($color-grey-3, $fs-0 - 1, $fw-0);
+                    transition: all 0.5s;
+                    &.active {
+                        color: $color-black-2;
+                    }
+                    &:hover {
+                        color: $color-black-2;
+                    }
+                    @media screen and (max-width: 767px) {
+                        line-height: $line-height-0 + 15;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        margin-top: $mg-2;
+        .tab-pane {
+            .row {
+                @media screen and (min-width: 576px) and (max-width: 991.98px) {
+                    .external:first-of-type,
+                    .video {
+                        margin-bottom: $mg-0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            width: 100% !important;
+            padding: 0 $pd-7;
+        }
+    }
+}

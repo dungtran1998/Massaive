@@ -1,0 +1,39 @@
+.banner {
+    @extend .backgroundImg;
+    background-image: url("../img/index-banner-2.jpg");
+    position: relative;
+    height: 381px;
+
+    .banner__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        color: $color-white-0;
+        text-align: center;
+        h1 {
+            letter-spacing: $letter-spacing-0;
+            @include styleText($color-white-0, $fs-1, $fw-1);
+        }
+        h3 {
+            letter-spacing: $letter-spacing-1;
+            @include styleText($color-white-0, $fs-3, $fw-2);
+        }
+    }
+}
+
+@media screen and (max-width: 787.98px) {
+    .banner {
+        .banner__content {
+            h1 {
+                @include styleText($color-white-0, $fs-6, $fw-2);
+                letter-spacing: $letter-spacing-4;
+            }
+            h3 {
+                font-size: $fs-7;
+                letter-spacing: $letter-spacing-1;
+            }
+        }
+    }
+}

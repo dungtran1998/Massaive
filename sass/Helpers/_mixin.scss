@@ -1,0 +1,32 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin menuzord($top, $left, $right, $bottom, $width, $z-index) {
+    position: absolute;
+    display: none;
+    min-width: $width;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    z-index: $z-index;
+}
+
+@mixin button($bgc, $txt-color, $fs, $pd-x, $pd-y) {
+    display: inline-block;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: $bgc;
+    color: $txt-color;
+    font-size: $fs;
+    padding: $pd-x $pd-y;
+}
